@@ -1,0 +1,22 @@
+
+/* aşağıdaki gibi input ve textarea yazılırsa yazı içerisine dışarda eklenen text in rengi belirtilen renk olur*/
+
+input{
+    color:red;
+}
+textarea{
+    color:blue;
+}
+
+/* input::placeholder -> bu şekilde kullanım olursa inputun içerisinde yazan 'Adınızı yazın' yazısının rengi turuncu olur */
+input::placeholder{
+    color:orange;
+}
+
+textarea::placeholder{
+    color:blue;
+    font-size: 20px;
+}
+
+
+/* ::placeholder yazılarak color girişi yapılırsa ->tüm placeholderlar o renk olur*/

@@ -1,0 +1,33 @@
+/* div içerisinde etiket içerisinde olan yazılar kırmızı oldu
+div *{
+    color:red;
+}
+*/
+
+
+/* *:evrensel etiket htlm içinde ne varsa değişiklik yapar
+*{
+    color:pink;
+}
+*/
+
+
+/* aşağıdaki gibi çoklu seçim yapılabilir h3,p,div,class ve id yapıları için 
+
+h3, p, div ,.paragraf #test{
+    color:green;
+}
+*/
+ 
+
+/* divin içindeki em etkiketini kırmızı yap
+div em{
+    color:red
+}
+*/
+
+
+/* p paragrafıda olan b etiketini kırmızı yapar, üst dizin p olmalı , p etiketi b yi yapsar, sadece b içinde ki alanın rengi değişir*/
+p > b {
+    color: red;
+}

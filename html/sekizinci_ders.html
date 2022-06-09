@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head lang="tr">
+    <meta charset="utf-8">
+    <title>Etiket</title>
+</head>
+   <form action="" method="get" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Giriş yap</legend>
+          <b><label for="kullanıcı_adi">Kullanıcı adı</label></b>
+          <input  required maxlength="5" id="kullanıcı_adi" type="text"  > <br>
+            <!--<input required maxlength="5" id="kullanıcı_adi" type="text" value='Merve'> 
+             value="Merve": değer atama, kullanıcı adı kısmında MErve yazar-->
+            <!--<input readonly required maxlength="5" id="kullanıcı_adi" type="text" value='Merve'>
+            readonly:Kutucukta yazan değeri kitler, değişim yapılamaz-->
+          <b><label for="sifre">Şifre</label></b>
+          <input required  maxlength="5" id="sifre" type="password"> <br>
+          <!--required: kutucukların boş geçilmesine izin vermez-->
+          <!--checked: Seçilen alan işaretli gelir-->   
+
+         <label for="email"> E-mail giriniz.</label> 
+         <input type="email" requiredmid="email" ><br>
+
+         <input type="submit"  value="KayıtOl">
+   </fieldset>
+
+<p>
+    Lütfen bir dosya seçiniz.
+    <label for="dosya" ></label>
+    <input id="dosya"  type="file"><br>
+</p>
+
+      <label>
+         <input required type="checkbox" checked> kuralları kabul ediyorum.
+      </label> <br><br>
+
+      <label>
+        <input type="checkbox"> kuralları kabul ediyorum2.
+      </label> <br><br>
+
+      <label>
+         <input type="radio" name="cinsiyet" value="kadın" checked>Kadın
+      </label>
+
+      <label>
+         <input type="radio" name="cinsiyet" value="erkek">Erkek
+      </label> <br><br>
+    
+     <input type="submit" formaction="a.html" value="Gönder">
+     <!--formaction="a.html": göndere basınca a.html sayfasına gider-->
+     <input type="hidden" name="test" value="test">
+     <input type="reset" value="Sıfırla">
+    
+ </form>
+ <br>
+
+ <input type="color"> <br>
+ <input type="date"><br>
+ <input type=" datetime-local"><br>
+ <input type="email">  <br>
+ <input type="text" name="kullanıcı_adi" autocomplete="off"><br>
+<!--autocomplete="off" : kullanıcı adına daha önce yazılan isimleri yada mailleri getirmemeye sağlar-->
+
+<p> kullanılan yazılım dilleri:
+    <input list="diller" >
+      <datalist id="diller">
+         <option value="html">
+         <option value="javascipt">
+         <option value="css">
+      </datalist>
+</p>
+
+
+<p> Lütfen seçim yapınız:
+   <select name="dil[]" size="5" multiple>
+      <!--<select name="dil[]" multiple size="5">  multiple: çoklu seçime izin veriyor--> 
+      <optgroup label="front-end dilleri">  
+         <option value="CSS">css</option>
+         <option selected value="CSS">html</option>
+      <!--selected: seçili olarak gelsin demek-->
+         <option value="CSS">javascipt</option>
+      </optgroup> 
+
+     <optgroup label="back-end dilleri">
+       <option value="php">php</option>
+       <option value="js">js</option>
+       <option value="python">pyhton</option>
+     </optgroup>
+  </select>
+</p>
+
+<textarea name="" cols="40" rows="20"></textarea>
+<button type="reset">Sıfırla</button>
+
+</body>
+</html>

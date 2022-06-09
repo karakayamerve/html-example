@@ -1,0 +1,27 @@
+
+h1 ~ div[class|="box"] { /* h1'in altında olan box ile başlayan ve - ile ayrılmış oalnlarda işlem yapar */
+                 background:red;
+                           }
+/*   |=: belirtilen kelime ve - ile ayırılanları getirir */
+
+
+h2 ~ div[class^=box] { /* h2'nin altında class box ile başlayanların hepsine işlem yapar */
+    background: green;
+}
+/*   ^= : box ile başlayan tüm classlarda işlem yapar */
+
+
+h3 ~ div[class$="box"]{
+    background: blue;
+}
+/*    $= : box ile biten tüm classlarda işlem yapar */
+ 
+h4 ~ div[class*="box"]{
+    background: yellow;
+}
+/*    *= : box ile başlayan veya biten tüm classlarda işlem yapar */
+
+h4 ~ div[class*="box" i]{
+    background: yellow;
+}
+/*   i: küçük büyük harf duyarlılığını kapatmak için kullanılır */

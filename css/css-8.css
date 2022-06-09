@@ -1,0 +1,30 @@
+abbr[title]{ /* abbr de title olanın rengini yeşil yap*/
+    color:green;
+}
+
+
+.box[title]{ /* box classına sahip title etiketli olan yazıları kırmızı yapar*/
+    color:red;
+}
+p b { /* p klasörünün altında bulunan b etiketini mavi yapar*/
+    color:blue;
+}
+
+
+
+
+/*2. bölüm*/
+
+a[target="blank"]{ /* a etiketlerinin target="blank" olanlarını kırmızı yapar*/
+    color:rgb(255, 0, 140);
+}
+
+
+/*a[title="gazete"]{  a etiketi içerisinde title=gazete olanın rengini değiştir
+    color:rgb(217, 151, 217);
+}
+*/
+
+h3 ~ a {  /* h3 den sonra gelen a etiketlerinin rengini gri yap */
+     color:grey;
+}

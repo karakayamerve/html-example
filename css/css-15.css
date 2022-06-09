@@ -1,0 +1,22 @@
+ul li:hover{  /* hover:mause ile  yazının üzerine gelince css de belirlenen işlem çalışır*/
+background-color: aquamarine;
+}
+
+a:hover{
+    background-color: red;
+
+}
+
+div:hover{
+    background-color: blue;
+}
+
+button:hover +ul{ /*buton üzerine gelince istenilen işlem yapılır (alttaki liste kaybolur)*/
+    display: none;
+}
+p::selection{
+    background-color: yellow;
+}
+p:hover::selection{ /* mause ile yeşil çizer, mause kalkınca sarı olur kelime*/
+    background-color: green;
+}

@@ -1,0 +1,52 @@
+ul li:first-of-type{ /* ilk li satırı*/
+    background-color: red;
+}
+ul li:last-of-type{  /* son li satırı*/
+    background-color: blue;
+}
+ul li:nth-child(3){ /* nth-child(3) listedeki 3. satırda işlem yapar */
+    background-color: green;
+    
+}
+ul li:nth-child(odd){ /* nth-child(odd) listedeki tek sayı olanlar için işlem yapar */
+    background-color: yellow;
+    
+}
+ul li:nth-child(even){ /* nth-child(even) listedeki çift sayı olanlar için işlem yapar */
+    background-color: orange;
+    
+}
+
+ul li:nth-child(3n){ /* nth-child(3n) listedeki 3ün katları olanlar için işlem yapar */
+    background-color: purple;
+}
+
+ul li:nth-child(n+4){ /*4. sıradan itibaren kahverengi yap */
+    background-color: brown;
+}
+ul li:nth-child(-n+6){ /* 6-5-4-3-2-1 olarak renk değiştirir*/
+    background-color: pink;
+}
+ ul li:nth-child(n+4):nth-child(-n+8){ /* 4,5,6,7,8 seçim yapar */
+    background-color:aquamarine;
+ }
+
+ ul li:nth-child(n+2):nth-child(even):nth-child(-n+8){ /* 2 ve 8 arasında çift sayıları seçer */
+     background-color: dodgerblue;
+ }
+
+div:nth-of-type(4){  /* divler arasına hangi etiket girerse girsin 4.divin arka planını değiştirir */
+    background-color: red;
+}
+div:nth-of-type(odd){ /* tek sayıda olan divleri seçer*/
+    background-color: deeppink;
+}
+
+ul li:nth-last-child(3){ /* sondan 3. li yi seçerek arka plan değiştiri*/
+    background-color:peru;
+}
+
+div:nth-last-of-type(3){ /* sondan 3. divi etkiler aradaki etiketleri atlar*/
+background-color: darkslategrey;
+
+}

@@ -1,0 +1,18 @@
+h3 +p{ /* h3 den sonra gelen p paragrafını seç rengini değiştir*/
+color: red;
+}
+
+div + p{ /* div etiketinden sonra gelen p paragrafına işlem yap*/
+ color:blueviolet;
+}
+
+/* paragraf33 span etiketi
+paragraf33 -> üstteki dizinden dolayı mor, span etiketi-> alttaki dizinden dolayı yeşil */
+
+div + p span{ /* divin altında olan p etiketinin içindeki span etiketini yeşil yapar*/
+    color:green;
+}
+
+.box +p span{ /* box classın altındaki p etikleti içindeki span etiketi*/
+    color:blue;
+}

@@ -1,0 +1,13 @@
+h3 ~ p{ /*     ~ : h3 den sonra gelen TÜM p paragrafını seç rengini değiştir*/
+    color: red;
+    }
+
+
+ul li.list2 +li{ /* ul li etiketinin içinde class list2 den sonra gelen li etikenin rengini değiştirir */
+    color:green;
+} 
+
+
+ul li.list4 ~ li{ /* ul li etiketinin içinde class list4 den sonra gelen TÜM li etiketinin rengini değiştirir */
+    color:yellow;
+}

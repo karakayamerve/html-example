@@ -1,0 +1,46 @@
+/*1. bölüm/
+
+/* class yapısı olmazsa direk kullanım aşağıdaki gibidir */
+/* first-child : listenin en başındaki satır için işlem yapar*/
+.list li:first-child{
+    background-color: yellow;
+}
+
+/*.list1 li:first-child{
+    background-color: blue;
+}
+
+.list2 li:first-child{
+    background-color: red;
+}*/
+
+/*divlerin içindeki ilk ul yapısını seçer  liste1,liste2, liste3 için işlem yapar*/
+div ul:first-child{
+    background-color: aquamarine;
+}
+
+div:first-child{
+    background-color: blueviolet;
+}
+
+
+/*2.bölüm*/
+
+/* list2 classı içerisinde bulunan son li'lerin arka planını değiştiri*/
+.list2 li:last-child{
+    background-color: red;
+}
+
+/* ul-li dizinlerinde bulunan son li satırlarını seçer, hem list hem list2 den son li'leri alır */
+ ul:last-child{
+    background-color: pink;
+}
+
+p:last-child{
+    background-color: orange;
+}
+
+
+
+
+

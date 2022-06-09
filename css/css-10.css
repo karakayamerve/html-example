@@ -1,0 +1,48 @@
+h1 + div{
+    background-color: yellow;
+}
+
+h1 + div::after{
+ content: attr(data-oncesi) ;
+ color:red;
+ background: blue;
+}
+/* h1 de yazılı olmayan yazıyı 'after' ile yazdırıyoruz */
+/* attr içerisinde belirtilen nitelik belirtilen yazıdan önce yada sonra eklenir */
+
+h2 + .box2::before{
+ content: 'önceki yazı';
+ background: green;
+ color:purple;
+}
+/* h2 de yazılı olmayan yazıyı 'before' ile yazdırıyoruz */
+/* after ve before content ile birlikte kullanılır */
+
+h3 ~ a[target=blank]::after{
+  content: '(' attr(target) ')'  /* Milliyet (blank) olarak çıktı alınır */
+}
+/* attr: attribute ile html elementinin özelliklerini alır (target içerisinde blank yazıyor ise yazının sonuna blank ekler*/
+
+p::first-letter{
+    color:red;
+    font-size: 30px;;
+}
+/* first-letter: ilk harfleri kırmızı yapar */
+
+h4 + p::first-line{
+    background: yellow;
+}
+/* first-line: ilk satırı sarı yapar */
+
+::selection{
+    background-color: orange;
+}
+/* ::selection: seçili yazının arka plan rengini değiştirir */
+
+p::selection{
+    background-color: blue;
+}
+/*  p::selection: seçili yazının arka plan rengini değiştirir ( başına p ekleyince sadece p içinde yazanları kapsar divi kapsamaz */
+
+
+

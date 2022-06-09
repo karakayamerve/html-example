@@ -1,0 +1,37 @@
+
+/* burası da .color-red olan tüm classları kapsar*/
+.color-red{
+    color: red;
+}
+
+/* burası da text-bold yazan class ları kapsar ve kalın yapar*/
+.text-bold{
+font-weight: bold;
+}
+
+/* 2 class a da sahip olan değerler için değişim yapar*/
+.color-red.text-bold{
+    color:green;
+}
+
+/* id=paragraf2 : id tek olur, class gibi çok olmaz, bu id için 
+bu değişim geçerli demektir*/   
+#paragraf2{
+    color:yellow;
+}
+
+/*paragraf içinden class:color-red ve text-bold olan ayrıca idsi paragraf2 olan seçenek için değişim yap*/
+p.color-red.text-bold#paragraf2{
+    color:blue;
+}
+
+/*burası h3,p ve div içlerini tek tek mavi yapar
+h3{
+    color: green;
+}
+p{
+    color: green;
+}
+div{
+    color:orange;
+} */
